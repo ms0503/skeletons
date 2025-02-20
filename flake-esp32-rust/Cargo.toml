@@ -1,0 +1,32 @@
+[[bin]]
+harness = false
+name = "esp32"
+
+[build-dependencies]
+embuild = "0.33"
+
+[dependencies]
+log = "0.4"
+
+[dependencies.esp-idf-svc]
+features = ["critical-section", "embassy-sync", "embassy-time-driver"]
+version = "0.51"
+
+[features]
+default = []
+experimental = ["esp-idf-svc/experimental"]
+
+[package]
+authors = ["Sora Tonami <ms0503@outlook.com>"]
+edition = "2021"
+name = "esp32"
+resolver = "2"
+rust-version = "1.77"
+version = "0.1.0"
+
+[profile.dev]
+debug = true
+opt-level = "z"
+
+[profile.release]
+opt-level = "s"

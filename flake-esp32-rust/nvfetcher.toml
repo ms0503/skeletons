@@ -1,0 +1,4 @@
+[idf-rust]
+fetch.docker = "espressif/idf-rust"
+src.container = "espressif/idf-rust"
+src.include_regex = "all_latest"

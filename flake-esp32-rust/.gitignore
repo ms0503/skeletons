@@ -1,0 +1,6 @@
+**/.direnv/
+.embuild/
+.vscode/
+Cargo.lock
+result*
+target/
