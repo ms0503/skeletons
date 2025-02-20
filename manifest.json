@@ -1,0 +1,12 @@
+{
+    "$schema": "https://github.com/ms0503/skeletons/raw/HEAD/skeletons-manifest.schema.json",
+    "skeletons": {
+        "flake": {
+            "description": "A general flake template"
+        },
+        "flake-esp32-rust": {
+            "description": "An ESP32 with Rust flake template"
+        }
+    },
+    "version": 1
+}

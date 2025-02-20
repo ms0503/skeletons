@@ -1,0 +1,32 @@
+{
+    "$id": "https://github.com/ms0503/skeletons/raw/HEAD/skeletons-manifest.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+        "skeletons": {
+            "additionalProperties": false,
+            "description": "A list of skeletons",
+            "patternProperties": {
+                "^.*$": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "description": {
+                            "description": "A skeleton description",
+                            "type": "string"
+                        }
+                    },
+                    "required": ["description"],
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "version": {
+            "const": 1,
+            "description": "A manifest version"
+        }
+    },
+    "required": ["skeletons", "version"],
+    "title": "Skeletons manifest",
+    "type": "object"
+}
