@@ -8,8 +8,11 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
       url = "github:hercules-ci/flake-parts";
     };
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    systems.url = "github:nix-systems/default";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    systems = {
+      flake = false;
+      url = "github:nix-systems/default";
+    };
   };
   outputs =
     inputs@{ flake-parts, systems, ... }:
