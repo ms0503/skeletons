@@ -6,6 +6,9 @@
         },
         "flake-esp32-rust": {
             "description": "An ESP32 with Rust flake template"
+        },
+        "flake-public": {
+            "description": "A public flake template"
         }
     },
     "version": 1

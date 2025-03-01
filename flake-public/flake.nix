@@ -1,5 +1,9 @@
 {
   inputs = {
+    flake-compat = {
+      flake = false;
+      url = "github:edolstra/flake-compat";
+    };
     flake-parts = {
       inputs.nixpkgs-lib.follows = "nixpkgs";
       url = "github:hercules-ci/flake-parts";
